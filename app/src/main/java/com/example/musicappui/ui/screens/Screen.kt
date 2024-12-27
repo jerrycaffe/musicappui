@@ -1,15 +1,16 @@
-package com.example.musicappui
+package com.example.musicappui.ui.screens
 
 import androidx.annotation.DrawableRes
+import com.example.musicappui.R
 
-sealed class Screen(val title: String, val route:String) {
-    sealed class DrawerScreen(val dTitle: String, val dRoute:String, @DrawableRes val icon: Int): Screen(dTitle, dRoute){
+sealed class ScreenConfig(val title: String, val route:String) {
+    sealed class DrawerScreen(val dTitle: String, val dRoute:String, @DrawableRes val icon: Int): ScreenConfig(dTitle, dRoute){
         object Account: DrawerScreen(
             "Account",
             "account",
             R.drawable.ic_account
         )
-        object Subscription:DrawerScreen(
+        object Subscription: DrawerScreen(
             "Subscription",
             "subscribe",
             R.drawable.ic_subscribe
@@ -24,7 +25,7 @@ sealed class Screen(val title: String, val route:String) {
 }
 
 val screensInDrawer = listOf(
-    Screen.DrawerScreen.Account,
-    Screen.DrawerScreen.Subscription,
-    Screen.DrawerScreen.AddAccount
+    ScreenConfig.DrawerScreen.Account,
+    ScreenConfig.DrawerScreen.Subscription,
+    ScreenConfig.DrawerScreen.AddAccount
 )
