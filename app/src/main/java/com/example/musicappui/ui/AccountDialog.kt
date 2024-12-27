@@ -22,6 +22,7 @@ import androidx.compose.ui.window.DialogProperties
 
 @Composable
 fun AccountDialog(dialogOpen: MutableState<Boolean>){
+    println(dialogOpen.value)
     if(dialogOpen.value){
         AlertDialog(
             modifier = Modifier.fillMaxWidth().background(MaterialTheme.colors.primarySurface).padding(8.dp),

@@ -1,4 +1,4 @@
-package com.example.musicappui.ui.screens
+package com.example.musicappui.view
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column

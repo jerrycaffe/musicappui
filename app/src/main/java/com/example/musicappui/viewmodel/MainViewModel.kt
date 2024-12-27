@@ -1,4 +1,4 @@
-package com.example.musicappui.states;
+package com.example.musicappui.viewmodel;
 
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
