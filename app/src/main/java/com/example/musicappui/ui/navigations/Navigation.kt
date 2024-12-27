@@ -8,6 +8,7 @@ import androidx.navigation.NavController
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
+import com.example.musicappui.Library
 import com.example.musicappui.ui.screens.ScreenConfig
 import com.example.musicappui.view.AccountView
 import com.example.musicappui.view.Browse
@@ -25,8 +26,7 @@ fun Navigation(navController: NavController, viewModel: MainViewModel, pd: Paddi
            Home()
         }
         composable(ScreenConfig.BottomScreen.Library.route) {
-            //TODO add the screen for Library
-        }
+Library()        }
         composable(ScreenConfig.BottomScreen.Browse.route) {
            Browse()
         }
